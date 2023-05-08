@@ -61,8 +61,8 @@ if __name__ == '__main__':
             else :
                 new_im.save(os.path.join(f'train_dir/{path}', file.split('/')[-1].split('.')[0]+'.jpg'))
   
-    test_files = glob.glob(os.path.join(test_dir, "*.jpg"))
-    train_files = glob.glob(os.path.join(train_dir, "*.jpg"))
+    test_files = glob.glob(os.path.join(test_dir, "*", "*.jpg"))
+    train_files = glob.glob(os.path.join(train_dir, "*", "*.jpg"))
 
     print(f"Totally {len(test_files)} test images, {len(train_files)} train images")
 
