@@ -2,6 +2,9 @@
 
 This repository contains a Python project for performing image similarity searches using either the CLIP or ResNet models. This tool allows users to extract features from an image dataset and then search within that dataset for images similar to a given query image.
 
+![](dataset_fruit_veg/output_dir/clip_search_top_5_cucumber.png)
+![](dataset_fruit_veg/output_dir/resnet152_search_top_5_cucumber.png)
+
 ## Requirements
 
 - Python 3.6 or later
@@ -16,13 +19,13 @@ This repository contains a Python project for performing image similarity search
 ## Installation
 
 1. Clone this repository to your local machine.
-2. Ensure you have Python 3.6 or later installed.
-3. Install the required Python packages using the following command:
+2. Install the required Python packages using the following command:
 
 ```
 pip install torch torchvision Pillow numpy tqdm matplotlib timm
 ```
-
+3. Download fruit_veg dataset [here](https://www.kaggle.com/datasets/kritikseth/fruit-and-vegetable-image-recognition)
+   
 ## Usage
 
 ### Arguments
